@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "casefactorapp6e91478a": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "casefactores3": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}

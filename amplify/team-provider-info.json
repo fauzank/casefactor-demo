@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-casefactorapp-dev-140400-authRole",
+      "UnauthRoleArn": "arn:aws:iam::699018612104:role/amplify-casefactorapp-dev-140400-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::699018612104:role/amplify-casefactorapp-dev-140400-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-casefactorapp-dev-140400-deployment",
+      "UnauthRoleName": "amplify-casefactorapp-dev-140400-unauthRole",
+      "StackName": "amplify-casefactorapp-dev-140400",
+      "StackId": "arn:aws:cloudformation:us-east-1:699018612104:stack/amplify-casefactorapp-dev-140400/78945910-7cf2-11eb-9ea3-0a9888c17b59",
+      "AmplifyAppId": "d5buqt3xwazy7"
+    },
+    "categories": {
+      "auth": {
+        "casefactorapp6e91478a": {}
+      }
+    }
+  }
+}

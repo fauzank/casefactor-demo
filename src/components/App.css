@@ -1,0 +1,110 @@
+#wrapper {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.content-page {
+    padding: 10px 15px 5px 15px;
+    margin-top: 70px;
+}
+
+.appbar-header {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.flexGrow1 {
+    flex: 1 1 auto
+}
+
+.paddingRight2Rem {
+    padding-right: 2rem !important;
+}
+
+.MuiDataGrid-root .MuiDataGrid-colCellWrapper {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    background-color: #8ba3ff;
+    color: white;
+}
+
+.MuiTableRow-root.Mui-selected,
+.MuiTableRow-root.Mui-selected:hover {
+    background-color: #cecece !important;
+}
+
+.MuiTableRow-root.Mui-selected>.MuiTableCell-body {
+    color: #ff0b0b !important;
+}
+
+.MuiTableRow-root.Mui-selected>a {
+    color: #ff0b0b !important;
+}
+
+.MuiTableCell-head {
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.btn-group-xs>.btn,
+.btn-xs {
+    padding: .25rem .4rem !important;
+    font-size: .875rem  !important;
+    line-height: .5 !important;
+    border-radius: .2rem !important;
+}
+
+.btn-mini {
+	padding: 0.05rem 0.05rem !important;
+	font-size: 0.5rem !important;
+	line-height: .05 !important;
+	border-radius: .2rem !important;
+}
+
+
+.listCardSize{
+    width: 300px !important;
+    min-height: 200px !important;
+}
+
+:root {
+--amplify-primary-color: #2381d3;
+    --amplify-primary-tint: #6cb0e7;
+    --amplify-primary-shade: #65aceb;
+  }
+
+  amplify-authenticator {
+    background: #2381d3;
+    padding: 5px;
+  }
+
+  amplify-container{
+    background: #2381d3;
+    padding: 5px;
+  }
+
+  .circularLoading {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 50%;
+	left: 18%;
+	margin-top: -12px;
+	margin-left: -12px;
+}
