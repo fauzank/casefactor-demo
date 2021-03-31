@@ -77,27 +77,27 @@ export default function ExtractTextPage() {
             setPageTitle("Extracted Text Analysis");
             try {
                 API.graphql({
-                    query: queries.extractTextAnalysis,
+                    query: queries.extractText,
                     variables: {
                         ExhibitId: xid,
                         DocumentURL: 'public/' + docUrl
                     }
                 }).then((resp) => {
                     console.log(resp);
-                    if(resp.data.extractTextAnalysis!==undefined && resp.data.extractTextAnalysis.Body!==undefined){
-                        setRespBody(resp.data.extractTextAnalysis.Body); 
+                    if(resp.data.extractText!==undefined && resp.data.extractText.Body!==undefined){
+                        setRespBody(resp.data.extractText.Body); 
                     }
-                    if (resp.data.extractTextAnalysis !== undefined && resp.data.extractTextAnalysis.KeyPhrases !== undefined && resp.data.extractTextAnalysis.KeyPhrases.length > 0) {
-                        resp.data.extractTextAnalysis.KeyPhrases.forEach((element, index) => {
+                    if (resp.data.extractText !== undefined && resp.data.extractText.KeyPhrases !== undefined && resp.data.extractText.KeyPhrases.length > 0) {
+                        resp.data.extractText.KeyPhrases.forEach((element, index) => {
                             element['id'] = index;
                         });
-                        setRows(resp.data.extractTextAnalysis.KeyPhrases);
+                        setRows(resp.data.extractText.KeyPhrases);
                     }
-                    if (resp.data.extractTextAnalysis !== undefined && resp.data.extractTextAnalysis.Entities !== undefined && resp.data.extractTextAnalysis.Entities.length > 0) {
-                        resp.data.extractTextAnalysis.Entities.forEach((element, index) => {
+                    if (resp.data.extractText !== undefined && resp.data.extractText.Entities !== undefined && resp.data.extractText.Entities.length > 0) {
+                        resp.data.extractText.Entities.forEach((element, index) => {
                             element['id'] = index;
                         });
-                        setEntityRows(resp.data.extractTextAnalysis.Entities);
+                        setEntityRows(resp.data.extractText.Entities);
                     }
                     //setRows(resp.data.getMovementsByExhibit.items)
                 })
