@@ -3,6 +3,7 @@
 
 const awsmobile = {
     "aws_project_region": "<<region>>",
+    "aws_appsync_authenticationType": "AMAZON_COGNITO_USER_POOLS",
     "aws_appsync_graphqlEndpoint": "<<graphql_api_endpoint",
     "aws_appsync_region": "<<region>>",
     "aws_cognito_identity_pool_id": "<<cognito_identity_pool_id",
