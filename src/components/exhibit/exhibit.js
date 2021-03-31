@@ -381,7 +381,7 @@ export default function Exhibit() {
                                         </div>
                                         {state.id &&
                                             <div className="col-12">
-                                                <FileUploadComponent folderName={eid+"/"+state.id + "/"} displayList={false}  fileType=".all" passChildData={setDocUrl} />
+                                                <FileUploadComponent folderName={eid+"/"+state.id} displayList={false}  fileType=".all" passChildData={setDocUrl} />
                                             </div>
                                         }
                                     </div>
