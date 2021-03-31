@@ -124,9 +124,9 @@ export const verifyExhibit = /* GraphQL */ `
     verifyExhibit(ExhibitId: $ExhibitId)
   }
 `;
-export const extractTextAnalysis = /* GraphQL */ `
+export const extractText = /* GraphQL */ `
   query ExtractTextAnalysis($ExhibitId: ID!, $DocumentURL: String) {
-    extractTextAnalysis(ExhibitId: $ExhibitId, DocumentURL: $DocumentURL) {
+    extractText(ExhibitId: $ExhibitId, DocumentURL: $DocumentURL) {
       ExhibitId
       Entities {
         Score
