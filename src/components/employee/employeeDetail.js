@@ -79,7 +79,7 @@ export default function EmployeeDetail() {
             API.graphql({
                 query: queries.getPersonHistory,
                 variables: {
-                    "id": PersonId
+                    "PersonId": PersonId
                 }
             }).then((resp) => {
                 console.log(resp);
