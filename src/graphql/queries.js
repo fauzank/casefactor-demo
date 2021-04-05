@@ -101,8 +101,8 @@ export const getPersonList = /* GraphQL */ `
   }
 `;
 export const getPersonHistory = /* GraphQL */ `
-  query GetPersonHistory($id: String) {
-    getPersonHistory(id: $id) {
+  query GetPersonHistory($PersonId: String) {
+    getPersonHistory(PersonId: $PersonId) {
       items {
         version
         txTime
